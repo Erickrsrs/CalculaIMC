@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
 :root{
-  --primary-color: rgb(40, 184, 194);
-  --primary-color-darker: rgb(10, 98, 116);
+  --white: rgb(255, 255, 255);
+  --primary-color-darker: rgb(13, 152, 180);
 }
 
 *{
@@ -12,18 +13,20 @@
 body{
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
+  background: var(--white);
+  font-family: 'Rubik', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
 .container{
+  border: 1px solid;
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
+  background: var(--width);
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 12px 12px 20px rgb(61, 210, 255);
 }
 
 form input, form label, form button{
@@ -38,13 +41,17 @@ form input{
   padding: 0 20px;
 }
 
+form input::placeholder{
+  font-size: 20px;
+}
+
 form input:focus{
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--white);
 }
 
 form button{
   border: none;
-  background: var(--primary-color);
+  background: rgb(61, 210, 255);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -67,4 +74,16 @@ form button:hover{
 .mensagem-nao-valida{
   background-color: rgba(253, 88, 88, 0.412);
   padding: 10px 20px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table td, table th{
+  text-align: left;
+}
+
+.table-1{
+  padding-right: 200px;
 }

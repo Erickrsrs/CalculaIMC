@@ -10,21 +10,51 @@
 </head>
 
 <body>
-
   <section class="container">
     <h1>Tabela IMC</h1>
-    <p>
-      
-    </p> 
-    <h2>Calcule seu IMC</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="table-1">IMC</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table-1">Menor do que 18,5</td>
+          <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+          <td class="table-1">Entre 18,5 e 24,9</td>
+          <td>Peso normal</td>
+        </tr>
+        <tr>
+          <td class="table-1">Entre 25 e 29,9</td>
+          <td>Sobrepeso</td>
+        </tr>
+        <tr>
+          <td class="table-1">Entre 30 e 34,9</td>
+          <td>Obesidade grau 1</td>
+        </tr>
+        <tr>
+          <td class="table-1">Entre 35 e 39,9</td>
+          <td>Obesidade grau 2</td>
+        </tr>
+        <tr>
+          <td class="table-1">Maior do que 40</td>
+          <td>Obesidade grau 3</td>
+        </tr>
+      </tbody>
+    </table>
 
+    <h2>Calcule seu IMC</h2>
     <form id="form" action="">
 
       <label for="peso">Peso:</label>
-      <input id="peso" name="peso" type="text">
+      <input id="peso" placeholder="Peso em kg:" name="peso" type="text">
 
       <label for="altura">Altura:</label>
-      <input id="altura" name="altura" type="text">
+      <input id="altura" placeholder="Altura em m:" name="altura" type="text">
 
       <button type="submit">Calcular</button>
     </form>
