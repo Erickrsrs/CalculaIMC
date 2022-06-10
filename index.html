@@ -11,43 +11,63 @@
 
 <body>
   <section class="container">
-    <h1>Tabela IMC</h1>
-    <table>
-      <thead>
-        <tr>
-          <th class="table-1">IMC</th>
-          <th>Resultado</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="table-1">Menor do que 18,5</td>
-          <td>Abaixo do peso</td>
-        </tr>
-        <tr>
-          <td class="table-1">Entre 18,5 e 24,9</td>
-          <td>Peso normal</td>
-        </tr>
-        <tr>
-          <td class="table-1">Entre 25 e 29,9</td>
-          <td>Sobrepeso</td>
-        </tr>
-        <tr>
-          <td class="table-1">Entre 30 e 34,9</td>
-          <td>Obesidade grau 1</td>
-        </tr>
-        <tr>
-          <td class="table-1">Entre 35 e 39,9</td>
-          <td>Obesidade grau 2</td>
-        </tr>
-        <tr>
-          <td class="table-1">Maior do que 40</td>
-          <td>Obesidade grau 3</td>
-        </tr>
-      </tbody>
-    </table>
+    <h1 class="header">Tabela IMC</h1>
 
-    <h2>Calcule seu IMC</h2>
+    <div class="container-table">
+      <table class="table-imc">
+        <thead>
+          <th>IMC</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Menor do que 18,5</td>
+          </tr>
+          <tr>
+            <td>Entre 18,5 e 24,9</td>
+          </tr>
+          <tr>
+            <td>Entre 25 e 29,9</td>
+          </tr>
+          <tr>
+            <td>Entre 30 e 34,9</td>
+          </tr>
+          <tr>
+            <td>Entre 35 e 39,9</td>
+          </tr>
+          <tr>
+            <td>Maior do que 40</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table-result">
+        <thead>
+          <th>Resultado</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abaixo do peso</td>
+          </tr>
+          <tr>
+            <td>Peso normal</td>
+          </tr>
+          <tr>
+            <td>Sobrepeso</td>
+          </tr>
+          <tr>
+            <td>Obesidade grau 1</td>
+          </tr>
+          <tr>
+            <td>Obesidade grau 2</td>
+          </tr>
+          <tr>
+            <td>Obesidade grau 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="header">Calcule seu IMC</h2>
     <form id="form" action="">
 
       <label for="peso">Peso:</label>
